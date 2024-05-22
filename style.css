@@ -58,15 +58,15 @@ img {
 .recipe p,
 .cooking strong,
 .cooking li {
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  font-size: clamp(1.4rem, 1vw + 0.4rem, 2rem);
+  line-height: clamp(1.8rem, 1vw + 1rem, 2.5rem);
 }
 
 .recipe h1,
 .cooking h2 {
   font-weight: 700;
-  font-size: 2.8rem;
-  line-height: 3.5rem;
+  font-size: clamp(2.8rem, 2vw + 1rem, 4rem);
+  line-height: clamp(3.5rem, 2vw + 1rem, 5rem);
 }
 
 .recipe img {
@@ -82,4 +82,42 @@ img {
   padding: 1.2rem;
 
   margin-top: 3.2rem;
+}
+
+@media (min-width: 1120px) {
+  body {
+    background: rgb(59, 57, 57);
+  }
+
+  main {
+    flex-direction: row;
+    max-width: fit-content;
+    gap: 16rem;
+
+    padding: 9rem 6rem;
+  }
+
+  .recipe {
+    max-width: 43.5rem;
+    gap: 6.6rem;
+  }
+
+  .cooking {
+    max-width: 52.5rem;
+  }
+
+  .recipe h1,
+  .cooking h2 {
+    font-size: 4rem;
+  }
+
+  .recipe p,
+  .cooking strong,
+  .cooking li {
+    font-size: 2rem;
+  }
+
+  .cooking button {
+    padding: 1.6rem;
+  }
 }
