@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased; /*edge, chrome, safari usam o motor webkit*/
+  -moz-osx-font-smoothing: grayscale; /*mozilla firefox*/
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Source Serif 4", serif;
+  --bg-image: src("./assets/bg-body.jpg");
+  --primary-color: #a54328;
+  --secondary-color: #fff;
+}
+
+body {
+  background: var(--secondary-color);
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+main {
+  max-width: 32rem;
+  margin-inline: auto;
+  padding: 5.3rem 3.7rem 5.4rem;
+  box-sizing: content-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  gap: 4.6rem;
+}
+
+.cooking h2 {
+  margin-bottom: 3.2rem;
+}
+
+.cooking ul {
+  margin-bottom: 2.4rem;
+}
+
+.cooking ul,
+.cooking ol {
+  padding-left: 2.4rem;
+}
+
+.recipe p,
+.cooking strong,
+.cooking li {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.recipe h1,
+.cooking h2 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+}
+
+.recipe img {
+  width: 100%;
+  margin-block: 3.2rem;
+}
+
+.cooking button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 1.2rem;
+
+  margin-top: 3.2rem;
+}
